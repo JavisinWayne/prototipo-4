@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Hernández | Bodega en Madrid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0e0e0e;
+  --gold:#c6a55c;
+  --soft:#999;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter;
+  background:var(--black);
+  color:#fff;
+}
+
+/* NAV */
+.nav{
+  position:fixed;
+  width:100%;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.hero h1{
+  font-family:"Playfair Display";
+  font-size:clamp(3rem,6vw,5rem);
+}
+
+.hero p{
+  margin:15px 0;
+  color:var(--soft);
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 24px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn-primary{
+  background:var(--gold);
+  color:black;
+}
+
+.btn-outline{
+  border:1px solid var(--gold);
+  color:var(--gold);
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+/* SECTION */
+.section{
+  padding:100px 20px;
+  text-align:center;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+}
+
+.title{
+  font-family:"Playfair Display";
+  font-size:2.5rem;
+  margin-bottom:30px;
+}
+
+/* BENEFITS */
+.benefits{
+  display:grid;
+  gap:20px;
+}
+
+.card{
+  background:#151515;
+  padding:25px;
+  border-radius:15px;
+}
+
+/* MENU */
+.menu{
+  max-width:600px;
+  margin:auto;
+}
+
+.menu-block{
+  margin-bottom:40px;
+}
+
+.menu-block h3{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+.menu-item{
+  border-bottom:1px solid rgba(255,255,255,.1);
+  padding:10px 0;
+  color:var(--soft);
+}
+
+/* REVIEWS */
+.review{
+  margin:20px auto;
+  max-width:600px;
+  font-style:italic;
+  color:#ddd;
+}
+
+/* MAP */
+iframe{
+  width:100%;
+  height:300px;
+  border:0;
+  margin-top:20px;
+}
+
+/* FLOAT */
+.float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float a{
+  padding:14px;
+  border-radius:50%;
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+}
+
+.call{background:var(--gold);color:black}
+.whatsapp{background:#25D366}
+.mapbtn{background:#fff;color:black}
+
+/* CTA FINAL */
+.cta{
+  background:var(--gold);
+  color:black;
+  padding:80px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div>Casa Hernández</div>
+  <a href="tel:915519648">📞 915 519 648</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Casa Hernández</h1>
+    <p>Tradición madrileña con experiencia premium</p>
+
+    <a href="tel:915519648" class="btn btn-primary">Llamar</a>
+    <a href="https://wa.me/34915519648" class="btn btn-outline">WhatsApp</a>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+  <div class="container">
+    <h2 class="title">Por qué elegirnos</h2>
+
+    <div class="benefits">
+      <div class="card">🍷 Vinos seleccionados: Ribera, Rioja, casa</div>
+      <div class="card">🍽️ Tapas clásicas: jamón, tortilla, croquetas</div>
+      <div class="card">👥 Raciones: calamares, bravas, ensaladilla</div>
+      <div class="card">📍 Ubicación en Retiro</div>
+    </div>
+
+    <a href="tel:915519648" class="btn btn-primary">Reservar mesa</a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section">
+  <h2 class="title">Carta</h2>
+
+  <div class="menu">
+
+    <div class="menu-block">
+      <h3>Vinos seleccionados</h3>
+      <div class="menu-item">Ribera del Duero, Rioja y vinos de la casa</div>
+    </div>
+
+    <div class="menu-block">
+      <h3>Tapas clásicas</h3>
+      <div class="menu-item">Jamón ibérico, tortilla española, croquetas caseras</div>
+    </div>
+
+    <div class="menu-block">
+      <h3>Raciones para compartir</h3>
+      <div class="menu-item">Calamares, patatas bravas, ensaladilla rusa</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <h2 class="title">Opiniones</h2>
+
+  <p class="review">⭐⭐⭐⭐⭐ “El mejor bar de Retiro, sin duda.”</p>
+  <p class="review">⭐⭐⭐⭐⭐ “Comida brutal y ambiente increíble.”</p>
+  <p class="review">⭐⭐⭐⭐⭐ “Siempre lleno por algo será.”</p>
+</section>
+
+<!-- MAP -->
+<section class="section">
+  <h2 class="title">Dónde estamos</h2>
+  <iframe src="https://www.google.com/maps?q=C.+de+Walia,+4,+Madrid&output=embed"></iframe>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <h2>Ven hoy o reserva ahora</h2>
+  <a href="tel:915519648" class="btn btn-primary">Llamar</a>
+</section>
+
+<!-- FLOAT -->
+<div class="float">
+  <a href="tel:915519648" class="call">📞</a>
+  <a href="https://wa.me/34915519648" class="whatsapp">💬</a>
+  <a href="https://maps.app.goo.gl/D9qig3m8ing9RSRJA" class="mapbtn">📍</a>
+</div>
+
+</body>
+</html>
